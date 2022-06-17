@@ -1,0 +1,171 @@
+#header{
+    background-color: rgb(248, 250, 252);
+    width:100%;
+    /* border:1px solid black; */
+    height:40px;
+    display:flex;
+    justify-content: space-evenly;
+}
+#side{
+ display:flex;
+
+}
+#first{
+    margin-top:10px;
+}
+#contry{
+    border:0px;
+    cursor: pointer;
+    background-color: rgb(248, 250, 252);
+
+}
+#lag{
+    border:0px;
+    cursor: pointer; 
+    background-color: rgb(248, 250, 252);
+}
+#curnsee{
+    border:0px;
+    cursor: pointer;  
+    background-color: rgb(248, 250, 252);
+}
+#contry:hover{
+    scrollbar-shadow-color: white;
+
+}
+#text{
+height:100%;
+/* border:1px solid  red; */
+}
+#text>h3{
+    margin-top:10px;
+    font-size: 14px;
+}
+#side{
+    height:100%;
+    /* border:1px solid red; */
+}
+#side>h3{
+    margin-top:7px;
+    
+}
+#firstimg{
+    margin-left:20px;
+    height:80%;
+    margin-top:3px;
+   
+}
+#secondimg{
+    margin-left: 20px;
+    height:80%;
+    margin-top:3px;
+    margin-right: 10px;
+}
+#logo{
+    height:80px;
+    width:100%;
+    /* border:1px solid red; */
+    display:flex;
+    justify-content:center;
+    justify-items: center;
+    margin-bottom: 20px;
+
+}
+#logo>img{
+    margin-top:20px;
+   height:50px;
+ 
+    
+}
+#pages{
+
+    height:20px;
+    width:70%;
+    border:1px solid red;
+    margin:auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+#pages>h5{
+   margin-top:2px;
+}
+ #main{
+    height:900px;
+    width:100%;
+    margin-top: 30px;
+    /* margin-left: -50%; */
+    border:1px solid black;
+
+
+} 
+ #main>img{
+    height:100%;
+    width:100%;
+    /* margin-right: 150%; */
+  
+} 
+#tages{
+    margin:auto;
+    margin-top:-400px;
+    margin-left: 50px;
+    margin-bottom: 240px;
+}
+#tages>h1{
+    font-size: 60px;
+    margin-bottom: 25px;
+
+}
+p{
+ margin-top:-12px;
+ font-family: sans-serif;
+}
+#tages>button{
+ height:50px;
+ width:150px;
+ background-color: rgb(241, 93, 38);
+ border: 0px;
+ font-size: 17px;
+ font-weight: bold;
+ color: white;
+}
+#bar{
+  display:flex;
+  gap:10px;
+  margin-bottom:100px;
+  height:400px;
+  width:70%;
+  margin:auto;
+}
+#text2{
+  height:100px;
+  width:70%;
+  
+  margin:auto;
+}
+#bar>div{
+ 
+  height:100%;
+  width:25%;
+}
+#bar>div>img{
+height:85%;
+width: 100%;
+}
+h5{
+font-size: 13px;
+margin-top:5px;
+text-align: center;
+}
+h5+p{
+margin-top:-20px;
+text-align: center;
+font-size: 11px;
+}
+h5+p+h5{
+margin:-10px;
+text-align: center;
+}
+#text>h3{
+font-family: sans-serif;
+margin-bottom:29px;
+}

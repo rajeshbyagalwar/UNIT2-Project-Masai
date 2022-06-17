@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            display:flex;
+            margin-left:300px;
+        }
+          .container{
+           width: 35%;
+           /* border: 2px solid black; */
+           height: 580px;
+           /* margin: auto; */
+         box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+           margin-top: 100px;
+       }
+       #container2{
+        /* background-color: rgba(190,123,212); */
+        background-image:linear-gradient(violet,violet);
+       }
+         h1,h4{
+           text-align: center;
+           margin-bottom:50px;
+       }
+       input{
+           margin: 20px;
+           margin-left: -0px;
+           width: 80%;
+           height: 40px;
+          margin-left: 30px;
+          border-radius: 10px;
+          font-size: 20px;
+       }
+       #Google{
+            margin: 20px;
+           margin-left: -0px;
+           width: 80%;
+           height: 40px;
+          margin-left: 30px;
+          border-radius: 10px;
+          font-size: 20px;
+          border: 2px solid black;
+          cursor: pointer;
+       }
+       label{
+           font-size: 20px;
+           
+           margin-left: 30px;
+           
+       }
+       p{
+           text-align: center;
+           font-size: 13px;
+           color: white;
+       }
+       a{
+           text-align: center;
+           font-size: 13px;
+           color: white;
+       }
+       #btn{
+           height: 40px;
+           font-size: 20px;
+           
+          cursor: pointer;
+          background-color: blue;
+          color: white;
+          background-color:red;
+       }
+       #btn:hover{
+background-color:black;       }
+       img{
+           margin-left: 60px;
+           margin-top: 7px;
+       }
+       #Google{
+           display:flex;
+           background-color:black;
+       }
+       #Google>p{
+           font-size: 20px;
+           margin-left: 20px;
+           color:white;
+           transform:translateY(-10px);
+       }
+
+       #newb{
+        margin:auto;
+        width:80%;
+        /* border:1px solid green; */
+        /* justify-content:center; */
+        text-align:center;
+        margin-top:300px;
+        background-color:white;
+       }
+       #newb p{
+        font-size:16px;
+        color:black;
+       }
+    </style>
+</head>
+<body>
+   
+    <div id="main"> 
+        <div class="container">
+            <h1>Sign In</h1>
+        <form action="">
+        <label for="">Email</label>
+        <br>
+        <input type="email" id="email" placeholder="Enter Email">
+        <br>
+        
+        <label for="">Password</label>
+        <br>
+        <input type="password" id="pass" placeholder="Enter Password">
+       <br>
+        <input type="submit"  id="btn" value="SignIn">
+        </form>
+     
+        <div id="Google">
+           <a href="www.google.com"><img src="https://sso.masaischool.com/google.svg" alt=""></a>
+            <p>Continue With Google </p>
+        </div>
+        </div>
+
+        
+        <div class="container"  id="container2">
+
+            <div id="newb">
+                <h3>
+                    As a Lyst member you can…
+                </h3>
+                <p> Save your searches</p>
+                <p> Create a wishlist</p>
+                <p>Get alerts on your items</p>
+        
+            </div>
+        
+        </div>
+    </div>
+
+  
+</body>
+</html>
+<script>
+          var userData = JSON.parse(localStorage.getItem("signupData"));
+
+            var form = document.querySelector("form").addEventListener("submit", function (event) {
+                event.preventDefault()
+                var data = {
+                    email:document.querySelector("#email").value,
+                    password: document.querySelector("#pass").value,
+                }
+              if(checkSignin(data.email,data.password)=== true){
+                localStorage.setItem("signinData",JSON.stringify(data))
+                alert("Signin successful")
+                window.location.href="index.html"
+              }
+               else{
+                alert("Wrong username or Password")
+               }
+            })
+        
+function checkSignin(email,password){
+    let filterr = userData.filter(function(ele){
+        return ele.email === email  && ele.password === password;
+    })
+    if(filterr.length > 0)
+    {
+        return true;
+    }
+    else{
+        return false
+    }
+}
+</script>

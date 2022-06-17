@@ -1,0 +1,355 @@
+#main{
+    width: 100%;
+}
+
+#container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+ margin-right: 20px;
+ 
+ height: 40px;
+
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#container>p{
+    margin-left: 10px;
+    cursor: pointer;
+   
+}
+#Help{
+    margin-left: 20px;
+    width: 60px;
+    height: 20px;
+  margin-top: 17px;
+  border: none;
+  cursor: pointer;
+}
+p+p{
+    width: 70px;
+    background-color: black;
+    color: white;
+    height: 20px;
+    
+    text-align: center;
+   
+}
+p+p>a{
+    color: white;
+}
+#container>h4{
+    margin-top: 19px;
+    
+}
+#navbar{
+    width: 100%;
+    height: 70px;
+    
+    display: flex;
+    flex-direction: row;
+   
+}
+#navbar>h1{
+    width: 150px;
+    height: 50px;
+   
+    margin-top: -0;
+    font-size: 50px;
+    margin-left: 20px;
+}
+.searchbox{
+  width: 600px;
+  height: 50px;
+ 
+  margin: auto;
+  
+  cursor: pointer;
+}
+#search{
+    width: 500px;
+  margin-left: 500px;
+    height: 30px;
+   cursor: pointer;
+  
+    margin-top: 20px;
+    
+    position: absolute;
+}
+#icon{
+    width: 20px;
+  margin-left: 600px;
+    position: relative;
+    cursor: pointer;
+}
+h2{
+    margin-left: 20px;
+    cursor: pointer;
+}
+.interfe>img {
+    width: 100%;
+    border: 2px solid black;
+}
+
+#products{
+    display: grid;
+    grid-template-columns: repeat(5,340px);
+    grid-template-rows: repeat(1,360px);
+    gap: 10px;
+    margin-top: 50px;
+    overflow-x: auto;
+    
+}
+#products>div{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    /* overflow-x: auto; */
+    cursor: pointer;
+}
+#products::-webkit-scrollbar{
+    display: none;
+}
+#name{
+    display: flex;
+  
+}
+#name:hover{
+    transform: scale(1.1);
+}
+#name1{
+  /* border: 2px solid black; */
+  height: 100%;
+  width: 30%;
+writing-mode: vertical-lr;
+    text-orientation: upright;
+    
+}
+#name2>img{
+      /* border: 2px solid black; */
+      height: 100%;
+      width: 100%;
+}
+#name2>a>img {
+    /* border: 2px solid black; */
+    height: 100%;
+    width: 100%;
+}
+#name1>h1 {
+    font-size: 120%;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+  margin-left: 50px;
+  margin-top: 0px;
+
+}
+
+
+#Aname{
+    display:grid;
+    grid-template-columns: repeat(10,300px);
+    grid-template-rows: repeat(1,300px);
+    overflow-x: auto;
+     gap: 20px; 
+} 
+#Aname>div{
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top: 20px;
+        cursor: pointer;
+    border: 1px solid black;
+}
+#Aname>div:hover{
+    transform: scale(1.1);
+}
+#Aname::-webkit-scrollbar{
+    display: none;
+}
+#Aname>div>img{
+    width: 100%;
+    height: 80%;
+}
+#Aname>div>h1{
+    font-size: 20px;
+}
+#Aname>.hey{
+   
+    background-color: rgb(156, 186, 187);
+}
+.hey+h1{
+font-size: 60px;
+}
+#Aname1 {
+    display: grid;
+    grid-template-columns: repeat(10, 300px);
+    grid-template-rows: repeat(1, 300px);
+    overflow-x:auto;
+    gap: 20px;
+}
+
+#Aname1>div {
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+border: 1px solid black;
+    margin-top: 10px;
+        cursor: pointer;
+}
+#Aname1>div:hover{
+transform: scale(1.1);
+}
+#Aname1::-webkit-scrollbar {
+    display: none;
+}
+
+#Aname1>div>img {
+    width: 100%;
+    height: 80%;
+}
+#Aname1>div>a>img {
+    width: 100%;
+    height: 80%;
+}
+#Aname1>div>h1 {
+    font-size: 20px;
+}
+
+#Aname1>.hey {
+
+    background-color: rgb(156, 186, 187);
+}
+
+.hey+h1 {
+    font-size: 30px;
+}
+#Aname3{
+    display: grid;
+    grid-template-columns: repeat(10, 300px);
+    grid-template-rows: repeat(1, 300px);
+    overflow-x: auto;
+    gap: 20px;
+    margin: auto;
+
+}
+
+#Aname3>div {
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#Aname3::-webkit-scrollbar {
+    display: none;
+}
+
+#Aname3>div>img {
+    width: 100%;
+    height: 80%;
+    cursor: pointer;
+   
+}
+#Aname3>div>a>img {
+    width: 100%;
+    height: 80%;
+    cursor: pointer;
+
+}
+#Aname3>div:hover{
+    transform: scale(1.1);
+}
+
+#Aname3>div>h1 {
+    font-size: 20px;
+}
+
+#Aname3>.hey {
+
+    background-color: rgb(156, 186, 187);
+}
+
+.hey+h1 {
+    font-size: 30px;
+}
+
+
+#bottom{
+    margin-top: 10px;
+  height: 500px;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  background-color: rgb(212, 211, 211);
+}
+.stars{
+   width: 200px;
+   height: 60px;
+  
+   margin-top: 50px;
+  display: flex;
+}
+.stars>h2{
+    margin-top: 20px;
+    margin-left: -170px;
+}
+
+.stars2>img{
+    width: 200px;
+}
+.stars2>p{
+    font-size: 20px;
+background-color: rgb(212, 211, 211);
+    color: black;
+}
+#connec{
+    display: flex;
+}
+#connec1{
+    width: 300px;
+}
+#connec1>img {
+    width: 100px;
+    cursor: pointer;
+    background-color: rgb(212, 211, 211);
+}
+#connec>img{
+width: 30px;
+margin-top:20px;
+margin-left: 10px;
+cursor: pointer;
+}
+
+#div1{
+    margin-left: 100px;
+    width: 30%;
+
+}
+#div2>p{
+background-color: rgb(212, 211, 211);
+    color: black;
+    width: 200px;
+    /* border: 2px solid black; */
+    text-align: center;
+    cursor: pointer;
+
+}
+#div3>p {
+background-color: rgb(212, 211, 211);
+    color: black;
+    width: 200px;
+    /* border: 2px solid black; */
+    text-align: center;
+    cursor: pointer;
+    
+
+}#div3>p>a {
+    background-color: rgb(212, 211, 211);
+    color: black;
+    width: 200px;
+    /* border: 2px solid black; */
+    text-align: center;
+    cursor: pointer;
+
+
+}
+#div3{
+    margin-left: 100px;
+}
